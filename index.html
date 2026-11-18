@@ -1,143 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-  <title>W3Schools</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#282a35">
+  <title>W3Schools — CSS Tutorial</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color:##fff;
-      width: 260%;
-      height: 10vh;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .logo img {
-      height: 35px;
-    }
-
-    .menu {
-      display: flex;
-      gap: 20px;
-    }
-
-    .menu a {
-      color: #000;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .menu a:hover {
-      color: #04AA6D;
-    }
-
-    .search-area {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .search-area input {
-      padding: 6px 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .signin {
-      background-color: #04AA6D;
-      color: white;
-      border: none;
-      padding: 8px 14px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .signin:hover {
-      background-color: #059862;
-    }
-    .nar{
-    display: flex;
-    gap: 20px;
-     background-color: black;
-     width: 260%;
-     height: 5vh;
-     padding: 10px 20px;
-   a{
-       color: white;
-   }
-   .ad{
-       padding: 10px 20px;
-   }
-   
-   .container{
-       background-color: gray;
-   }
-   
+    :root{--green:#04aa6d;--ink:#282a35;--paper:#d9eee1}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif}.top{height:72px;display:flex;align-items:center;padding:0 22px;background:#fff}.logo{display:flex;align-items:center;color:#282a35;text-decoration:none;font-size:23px;font-weight:800}.logo-badge{display:grid;width:38px;height:38px;margin-right:8px;place-items:center;border-radius:50%;background:var(--ink);color:#fff5d6;font-family:Georgia,serif;font-size:17px}.nav{display:flex;gap:18px;margin-left:34px}.nav a{color:#111;text-decoration:none;font-size:14px}.top-actions{margin-left:auto;display:flex;align-items:center;gap:8px}.search{width:190px;height:38px;padding:0 14px;border:1px solid #ddd;border-radius:20px}.button{height:38px;padding:0 18px;border:0;border-radius:20px;background:var(--green);color:#fff;font-weight:700}
+    .topics{height:44px;display:flex;align-items:center;gap:25px;padding:0 22px;overflow-x:auto;background:var(--ink)}.topics a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}.topics a:hover{color:#fff4a3}
+    .page{display:grid;grid-template-columns:220px 1fr}.sidebar{min-height:calc(100vh - 116px);padding:20px 18px;border-right:1px solid #dce8df;background:#f1f5f3}.sidebar h3{margin:0 0 12px}.sidebar a{display:block;padding:7px 8px;color:#333;text-decoration:none;font-size:14px}.sidebar a.active{background:#d8eeda;border-left:3px solid var(--green);font-weight:700}
+    main{max-width:940px;padding:28px 34px 70px}.breadcrumbs{display:flex;justify-content:space-between;gap:10px}.breadcrumbs button{height:38px;padding:0 16px;border:0;border-radius:4px;background:var(--green);color:#fff;font-weight:700}h1{margin:18px 0 20px;font-size:42px}.lesson{padding:24px 28px;border:1px solid #bdd4c5;border-radius:5px;background:var(--paper)}.lesson h2{margin:0 0 14px}.lesson p{line-height:1.7}.lesson code{padding:2px 5px;background:#fff;border-radius:3px;color:#b00020}.start{margin-top:18px;border-radius:5px}.example{margin-top:28px}.example h2{margin-bottom:10px}.codebox{padding:18px;border-left:5px solid var(--green);background:#282a35;color:#f7f7f7;font-family:monospace;line-height:1.7}
+    @media(max-width:760px){.nav{display:none}.search{display:none}.page{grid-template-columns:1fr}.sidebar{display:none}main{padding:22px 18px 50px}h1{font-size:34px}.lesson{padding:18px}.top{height:64px}}
   </style>
 </head>
 <body>
-
-  <div class="top-bar">
-    <div class="logo">
-      <img src="https://www.w3schools.com/" alt="W3Schools Logo">
-    </div>
-
-    <div class="menu">
-      <a href="#">Tutorials ▾</a>
-      <a href="#">References ▾</a>
-      <a href="#">Exercises ▾</a>
-      <a href="#">Certificates ▾</a>
-    </div>
-
-    <div class="search-area">
-      <input type="text" placeholder="Search...">
-      <button class="signin">Sign In</button>
-    </div>
-  </div>
-  <div class="nar">
-        <a href="">HTML</a>
-      <a href="">CSS</a>
-      <a href="">JAVASCRIPT</a>
-      <a href="">SQL</a>
-       <a href="">PYTHON</a>
-      <a href="">JAVA</a>
-      <a href="">PHP</a>
-      <a href="">HOW TO</a>
-        <a href="">W3.CSS</a>
-      <a href="">C</a>
-      <a href="">C++</a>
-      <a href="">BOOTSTRAP</a>
-      
-  </div>
-  <div class="ad">
-    <img src="" alt="">
-  </div>
-  <div>
-      <h1>CSS Tutorial</h1>
-        <button class="signin">HOME»</button>
-          <button class="signin"> NEXT»</button>
-      <div class="container">
-          <h2>Learn CSS</h2>
-         <p> <div>CSS is the language we use to style an HTML document.</div>
-         <br>
-<div>CSS describes how HTML elements should be displayed.</div>
-<br>
-
-<div>This tutorial will teach you CSSi from basic to advanced.</div>
-         </p>
-      </div>
-       <button class="signin">Start learning CSS now »</button>
-      </div>
-      
-
+  <header class="top"><a class="logo" href="#"><span class="logo-badge">W</span>w3schools</a><nav class="nav"><a href="#">Tutorials ▾</a><a href="#">Exercises ▾</a><a href="#">Certificates ▾</a><a href="#">Services ▾</a></nav><div class="top-actions"><input class="search" aria-label="Search" placeholder="Search..."><button class="button">Sign in</button></div></header>
+  <nav class="topics" aria-label="Subjects"><a href="#">HTML</a><a href="#">CSS</a><a href="#">JAVASCRIPT</a><a href="#">SQL</a><a href="#">PYTHON</a><a href="#">JAVA</a><a href="#">PHP</a><a href="#">C</a><a href="#">C++</a><a href="#">BOOTSTRAP</a></nav>
+  <div class="page"><aside class="sidebar"><h3>CSS Tutorial</h3><a class="active" href="#">CSS HOME</a><a href="#">CSS Introduction</a><a href="#">CSS Syntax</a><a href="#">CSS Selectors</a><a href="#">CSS How To</a><a href="#">CSS Comments</a><a href="#">CSS Colors</a><a href="#">CSS Backgrounds</a><a href="#">CSS Borders</a><a href="#">CSS Margins</a><a href="#">CSS Padding</a><a href="#">CSS Box Model</a><a href="#">CSS Display</a></aside>
+  <main><div class="breadcrumbs"><button>❮ Home</button><button>Next ❯</button></div><h1>CSS Tutorial</h1><section class="lesson"><h2>Learn CSS</h2><p>CSS is the language used to style an HTML document.</p><p>CSS describes how HTML elements should be displayed.</p><p>This tutorial teaches you CSS from basic to advanced.</p></section><button class="button start">Start learning CSS now »</button><section class="example"><h2>CSS Example</h2><div class="codebox">body {<br>&nbsp;&nbsp;background-color: lightblue;<br>}<br><br>h1 {<br>&nbsp;&nbsp;color: navy;<br>&nbsp;&nbsp;text-align: center;<br>}</div></section></main></div>
 </body>
 </html>
